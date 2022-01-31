@@ -1,0 +1,790 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		420FF8E827A7915100061B70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FF8E727A7915100061B70 /* AppDelegate.swift */; };
+		420FF8EF27A7915100061B70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420FF8ED27A7915100061B70 /* Main.storyboard */; };
+		420FF8F127A7915200061B70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 420FF8F027A7915200061B70 /* Assets.xcassets */; };
+		420FF8F427A7915200061B70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 420FF8F227A7915200061B70 /* LaunchScreen.storyboard */; };
+		420FF90A27A7915200061B70 /* JPMorganAlbumTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420FF90927A7915200061B70 /* JPMorganAlbumTaskUITests.swift */; };
+		42DFE82F27A798F200B725F2 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 42DFE82E27A798F200B725F2 /* Alamofire */; };
+		42DFE84B27A79A9300B725F2 /* AlbumClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE83527A79A9300B725F2 /* AlbumClient.swift */; };
+		42DFE84C27A79A9300B725F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE83827A79A9300B725F2 /* Constants.swift */; };
+		42DFE84E27A79A9300B725F2 /* AlbumModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE83D27A79A9300B725F2 /* AlbumModel.swift */; };
+		42DFE84F27A79A9300B725F2 /* AlbumPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE83F27A79A9300B725F2 /* AlbumPresenter.swift */; };
+		42DFE85027A79A9300B725F2 /* AlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE84127A79A9300B725F2 /* AlbumListViewController.swift */; };
+		42DFE85127A79A9300B725F2 /* AlbumCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE84227A79A9300B725F2 /* AlbumCell.swift */; };
+		42DFE85327A79A9300B725F2 /* AlbumInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE84627A79A9300B725F2 /* AlbumInteractor.swift */; };
+		42DFE85427A79A9300B725F2 /* AlbumProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE84827A79A9300B725F2 /* AlbumProtocols.swift */; };
+		42DFE85527A79A9300B725F2 /* AlbumRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE84A27A79A9300B725F2 /* AlbumRouter.swift */; };
+		42DFE85827A7ADF300B725F2 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE85727A7ADF300B725F2 /* Utility.swift */; };
+		42DFE85A27A7B40000B725F2 /* AlbumOfflineStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE85927A7B40000B725F2 /* AlbumOfflineStorage.swift */; };
+		42DFE85D27A7D68700B725F2 /* AlbumPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE85C27A7D68700B725F2 /* AlbumPresenterTests.swift */; };
+		42DFE85F27A7D76500B725F2 /* AlbumInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DFE85E27A7D76500B725F2 /* AlbumInteractorTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		420FF8FB27A7915200061B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420FF8DC27A7915100061B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 420FF8E327A7915100061B70;
+			remoteInfo = JPMorganAlbumTask;
+		};
+		420FF90627A7915200061B70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 420FF8DC27A7915100061B70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 420FF8E327A7915100061B70;
+			remoteInfo = JPMorganAlbumTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		420FF8E427A7915100061B70 /* JPMorganAlbumTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPMorganAlbumTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		420FF8E727A7915100061B70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		420FF8EE27A7915100061B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		420FF8F027A7915200061B70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		420FF8F327A7915200061B70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		420FF8F527A7915200061B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420FF8FA27A7915200061B70 /* JPMorganAlbumTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMorganAlbumTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		420FF90027A7915200061B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		420FF90527A7915200061B70 /* JPMorganAlbumTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JPMorganAlbumTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		420FF90927A7915200061B70 /* JPMorganAlbumTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JPMorganAlbumTaskUITests.swift; sourceTree = "<group>"; };
+		420FF90B27A7915200061B70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DFE83527A79A9300B725F2 /* AlbumClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumClient.swift; sourceTree = "<group>"; };
+		42DFE83827A79A9300B725F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		42DFE83D27A79A9300B725F2 /* AlbumModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumModel.swift; sourceTree = "<group>"; };
+		42DFE83F27A79A9300B725F2 /* AlbumPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumPresenter.swift; sourceTree = "<group>"; };
+		42DFE84127A79A9300B725F2 /* AlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumListViewController.swift; sourceTree = "<group>"; };
+		42DFE84227A79A9300B725F2 /* AlbumCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumCell.swift; sourceTree = "<group>"; };
+		42DFE84627A79A9300B725F2 /* AlbumInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumInteractor.swift; sourceTree = "<group>"; };
+		42DFE84827A79A9300B725F2 /* AlbumProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumProtocols.swift; sourceTree = "<group>"; };
+		42DFE84A27A79A9300B725F2 /* AlbumRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumRouter.swift; sourceTree = "<group>"; };
+		42DFE85727A7ADF300B725F2 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		42DFE85927A7B40000B725F2 /* AlbumOfflineStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumOfflineStorage.swift; sourceTree = "<group>"; };
+		42DFE85B27A7D68600B725F2 /* JPMorganAlbumTaskTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JPMorganAlbumTaskTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		42DFE85C27A7D68700B725F2 /* AlbumPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumPresenterTests.swift; sourceTree = "<group>"; };
+		42DFE85E27A7D76500B725F2 /* AlbumInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumInteractorTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		420FF8E127A7915100061B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DFE82F27A798F200B725F2 /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420FF8F727A7915200061B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420FF90227A7915200061B70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		420FF8DB27A7915100061B70 = {
+			isa = PBXGroup;
+			children = (
+				420FF8E627A7915100061B70 /* JPMorganAlbumTask */,
+				420FF8FD27A7915200061B70 /* JPMorganAlbumTaskTests */,
+				420FF90827A7915200061B70 /* JPMorganAlbumTaskUITests */,
+				420FF8E527A7915100061B70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		420FF8E527A7915100061B70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				420FF8E427A7915100061B70 /* JPMorganAlbumTask.app */,
+				420FF8FA27A7915200061B70 /* JPMorganAlbumTaskTests.xctest */,
+				420FF90527A7915200061B70 /* JPMorganAlbumTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		420FF8E627A7915100061B70 /* JPMorganAlbumTask */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83327A79A9300B725F2 /* Modules */,
+				420FF8E727A7915100061B70 /* AppDelegate.swift */,
+				420FF8ED27A7915100061B70 /* Main.storyboard */,
+				420FF8F027A7915200061B70 /* Assets.xcassets */,
+				420FF8F227A7915200061B70 /* LaunchScreen.storyboard */,
+				420FF8F527A7915200061B70 /* Info.plist */,
+			);
+			path = JPMorganAlbumTask;
+			sourceTree = "<group>";
+		};
+		420FF8FD27A7915200061B70 /* JPMorganAlbumTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				420FF90027A7915200061B70 /* Info.plist */,
+				42DFE85C27A7D68700B725F2 /* AlbumPresenterTests.swift */,
+				42DFE85E27A7D76500B725F2 /* AlbumInteractorTests.swift */,
+				42DFE85B27A7D68600B725F2 /* JPMorganAlbumTaskTests-Bridging-Header.h */,
+			);
+			path = JPMorganAlbumTaskTests;
+			sourceTree = "<group>";
+		};
+		420FF90827A7915200061B70 /* JPMorganAlbumTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				420FF90927A7915200061B70 /* JPMorganAlbumTaskUITests.swift */,
+				420FF90B27A7915200061B70 /* Info.plist */,
+			);
+			path = JPMorganAlbumTaskUITests;
+			sourceTree = "<group>";
+		};
+		42DFE83327A79A9300B725F2 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83427A79A9300B725F2 /* APIHandler */,
+				42DFE83627A79A9300B725F2 /* CommonModule */,
+				42DFE83B27A79A9300B725F2 /* AlbumModule */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		42DFE83427A79A9300B725F2 /* APIHandler */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83527A79A9300B725F2 /* AlbumClient.swift */,
+			);
+			path = APIHandler;
+			sourceTree = "<group>";
+		};
+		42DFE83627A79A9300B725F2 /* CommonModule */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83727A79A9300B725F2 /* Utils */,
+			);
+			path = CommonModule;
+			sourceTree = "<group>";
+		};
+		42DFE83727A79A9300B725F2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83827A79A9300B725F2 /* Constants.swift */,
+				42DFE85727A7ADF300B725F2 /* Utility.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		42DFE83B27A79A9300B725F2 /* AlbumModule */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83C27A79A9300B725F2 /* Entity */,
+				42DFE83E27A79A9300B725F2 /* Presenter */,
+				42DFE84027A79A9300B725F2 /* View */,
+				42DFE84327A79A9300B725F2 /* DataStorage */,
+				42DFE84527A79A9300B725F2 /* Interactor */,
+				42DFE84727A79A9300B725F2 /* Protocolos */,
+				42DFE84927A79A9300B725F2 /* Router */,
+			);
+			path = AlbumModule;
+			sourceTree = "<group>";
+		};
+		42DFE83C27A79A9300B725F2 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83D27A79A9300B725F2 /* AlbumModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		42DFE83E27A79A9300B725F2 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE83F27A79A9300B725F2 /* AlbumPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		42DFE84027A79A9300B725F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE84127A79A9300B725F2 /* AlbumListViewController.swift */,
+				42DFE84227A79A9300B725F2 /* AlbumCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		42DFE84327A79A9300B725F2 /* DataStorage */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE85927A7B40000B725F2 /* AlbumOfflineStorage.swift */,
+			);
+			path = DataStorage;
+			sourceTree = "<group>";
+		};
+		42DFE84527A79A9300B725F2 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE84627A79A9300B725F2 /* AlbumInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		42DFE84727A79A9300B725F2 /* Protocolos */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE84827A79A9300B725F2 /* AlbumProtocols.swift */,
+			);
+			path = Protocolos;
+			sourceTree = "<group>";
+		};
+		42DFE84927A79A9300B725F2 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				42DFE84A27A79A9300B725F2 /* AlbumRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		420FF8E327A7915100061B70 /* JPMorganAlbumTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420FF90E27A7915200061B70 /* Build configuration list for PBXNativeTarget "JPMorganAlbumTask" */;
+			buildPhases = (
+				420FF8E027A7915100061B70 /* Sources */,
+				420FF8E127A7915100061B70 /* Frameworks */,
+				420FF8E227A7915100061B70 /* Resources */,
+				420FF91727A794F800061B70 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JPMorganAlbumTask;
+			packageProductDependencies = (
+				42DFE82E27A798F200B725F2 /* Alamofire */,
+			);
+			productName = JPMorganAlbumTask;
+			productReference = 420FF8E427A7915100061B70 /* JPMorganAlbumTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		420FF8F927A7915200061B70 /* JPMorganAlbumTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420FF91127A7915200061B70 /* Build configuration list for PBXNativeTarget "JPMorganAlbumTaskTests" */;
+			buildPhases = (
+				420FF8F627A7915200061B70 /* Sources */,
+				420FF8F727A7915200061B70 /* Frameworks */,
+				420FF8F827A7915200061B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				420FF8FC27A7915200061B70 /* PBXTargetDependency */,
+			);
+			name = JPMorganAlbumTaskTests;
+			productName = JPMorganAlbumTaskTests;
+			productReference = 420FF8FA27A7915200061B70 /* JPMorganAlbumTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		420FF90427A7915200061B70 /* JPMorganAlbumTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 420FF91427A7915200061B70 /* Build configuration list for PBXNativeTarget "JPMorganAlbumTaskUITests" */;
+			buildPhases = (
+				420FF90127A7915200061B70 /* Sources */,
+				420FF90227A7915200061B70 /* Frameworks */,
+				420FF90327A7915200061B70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				420FF90727A7915200061B70 /* PBXTargetDependency */,
+			);
+			name = JPMorganAlbumTaskUITests;
+			productName = JPMorganAlbumTaskUITests;
+			productReference = 420FF90527A7915200061B70 /* JPMorganAlbumTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		420FF8DC27A7915100061B70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					420FF8E327A7915100061B70 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					420FF8F927A7915200061B70 = {
+						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1320;
+						TestTargetID = 420FF8E327A7915100061B70;
+					};
+					420FF90427A7915200061B70 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 420FF8E327A7915100061B70;
+					};
+				};
+			};
+			buildConfigurationList = 420FF8DF27A7915100061B70 /* Build configuration list for PBXProject "JPMorganAlbumTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 420FF8DB27A7915100061B70;
+			packageReferences = (
+				42DFE82D27A798F200B725F2 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = 420FF8E527A7915100061B70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				420FF8E327A7915100061B70 /* JPMorganAlbumTask */,
+				420FF8F927A7915200061B70 /* JPMorganAlbumTaskTests */,
+				420FF90427A7915200061B70 /* JPMorganAlbumTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		420FF8E227A7915100061B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420FF8F427A7915200061B70 /* LaunchScreen.storyboard in Resources */,
+				420FF8F127A7915200061B70 /* Assets.xcassets in Resources */,
+				420FF8EF27A7915100061B70 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420FF8F827A7915200061B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420FF90327A7915200061B70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		420FF91727A794F800061B70 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		420FF8E027A7915100061B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DFE84E27A79A9300B725F2 /* AlbumModel.swift in Sources */,
+				420FF8E827A7915100061B70 /* AppDelegate.swift in Sources */,
+				42DFE85A27A7B40000B725F2 /* AlbumOfflineStorage.swift in Sources */,
+				42DFE84B27A79A9300B725F2 /* AlbumClient.swift in Sources */,
+				42DFE85427A79A9300B725F2 /* AlbumProtocols.swift in Sources */,
+				42DFE85027A79A9300B725F2 /* AlbumListViewController.swift in Sources */,
+				42DFE85327A79A9300B725F2 /* AlbumInteractor.swift in Sources */,
+				42DFE85827A7ADF300B725F2 /* Utility.swift in Sources */,
+				42DFE84C27A79A9300B725F2 /* Constants.swift in Sources */,
+				42DFE85527A79A9300B725F2 /* AlbumRouter.swift in Sources */,
+				42DFE84F27A79A9300B725F2 /* AlbumPresenter.swift in Sources */,
+				42DFE85127A79A9300B725F2 /* AlbumCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420FF8F627A7915200061B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42DFE85F27A7D76500B725F2 /* AlbumInteractorTests.swift in Sources */,
+				42DFE85D27A7D68700B725F2 /* AlbumPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		420FF90127A7915200061B70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				420FF90A27A7915200061B70 /* JPMorganAlbumTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		420FF8FC27A7915200061B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 420FF8E327A7915100061B70 /* JPMorganAlbumTask */;
+			targetProxy = 420FF8FB27A7915200061B70 /* PBXContainerItemProxy */;
+		};
+		420FF90727A7915200061B70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 420FF8E327A7915100061B70 /* JPMorganAlbumTask */;
+			targetProxy = 420FF90627A7915200061B70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		420FF8ED27A7915100061B70 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				420FF8EE27A7915100061B70 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		420FF8F227A7915200061B70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				420FF8F327A7915200061B70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		420FF90C27A7915200061B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		420FF90D27A7915200061B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		420FF90F27A7915200061B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYXZ7Q9K6M;
+				INFOPLIST_FILE = JPMorganAlbumTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chinny.JPMorganAlbumTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		420FF91027A7915200061B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYXZ7Q9K6M;
+				INFOPLIST_FILE = JPMorganAlbumTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chinny.JPMorganAlbumTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		420FF91227A7915200061B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYXZ7Q9K6M;
+				INFOPLIST_FILE = JPMorganAlbumTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chinny.JPMorganAlbumTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JPMorganAlbumTaskTests/JPMorganAlbumTaskTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPMorganAlbumTask.app/JPMorganAlbumTask";
+			};
+			name = Debug;
+		};
+		420FF91327A7915200061B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYXZ7Q9K6M;
+				INFOPLIST_FILE = JPMorganAlbumTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chinny.JPMorganAlbumTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "JPMorganAlbumTaskTests/JPMorganAlbumTaskTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JPMorganAlbumTask.app/JPMorganAlbumTask";
+			};
+			name = Release;
+		};
+		420FF91527A7915200061B70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYXZ7Q9K6M;
+				INFOPLIST_FILE = JPMorganAlbumTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chinny.JPMorganAlbumTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JPMorganAlbumTask;
+			};
+			name = Debug;
+		};
+		420FF91627A7915200061B70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YYXZ7Q9K6M;
+				INFOPLIST_FILE = JPMorganAlbumTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Chinny.JPMorganAlbumTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JPMorganAlbumTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		420FF8DF27A7915100061B70 /* Build configuration list for PBXProject "JPMorganAlbumTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420FF90C27A7915200061B70 /* Debug */,
+				420FF90D27A7915200061B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420FF90E27A7915200061B70 /* Build configuration list for PBXNativeTarget "JPMorganAlbumTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420FF90F27A7915200061B70 /* Debug */,
+				420FF91027A7915200061B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420FF91127A7915200061B70 /* Build configuration list for PBXNativeTarget "JPMorganAlbumTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420FF91227A7915200061B70 /* Debug */,
+				420FF91327A7915200061B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		420FF91427A7915200061B70 /* Build configuration list for PBXNativeTarget "JPMorganAlbumTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				420FF91527A7915200061B70 /* Debug */,
+				420FF91627A7915200061B70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		42DFE82D27A798F200B725F2 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		42DFE82E27A798F200B725F2 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42DFE82D27A798F200B725F2 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 420FF8DC27A7915100061B70 /* Project object */;
+}
